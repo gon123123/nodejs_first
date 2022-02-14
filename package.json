@@ -1,0 +1,30 @@
+{
+  "name": "node8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gon123123/nodejs_first.git"
+  },
+  "keywords": [
+    "minh_tuan",
+    "first_web"
+  ],
+  "author": "minh tuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gon123123/nodejs_first/issues"
+  },
+  "homepage": "https://github.com/gon123123/nodejs_first#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
