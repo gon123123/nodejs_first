@@ -7,11 +7,14 @@ const port = 3000;
 
 const route  = require('./routers/index.js'); // file index.js sẽ tự động được nạp mà không cần truyền
 
+const db = require('./config/db/index.js'); // kết nối db
+// connect db 
+db.connect();   
 
 // template engine 
 app.engine('hbs', engine({extname : '.hbs'}));
 app.set('view engine', 'hbs');
-console.log(path.join(__dirname, 'resources/views'));
+console.log(path.join(__dirname, 'resources','views'));
 app.set('views', path.join(__dirname, "resources", "views"));
 
 app.use(express.static(path.join(__dirname,"public")));
@@ -30,5 +33,5 @@ route(app);
 
 // 127.0.0.1 == localhost
 app.listen(port, function () {
-    console.log("connection successful !!");
+    console.log("connection port successful !!");
 });
